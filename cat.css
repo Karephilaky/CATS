@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#cat {
+  width: 100px;
+  height: 100px;
+  background: url('cat.gif') no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Evita que el gato interfiera con los clicks */
+  transition: transform 0.1s linear, left 0.5s linear, top 0.5s linear; /* Transición para el giro y movimiento */
+}
+
+h1, p, button {
+  text-align: center;
+  margin-top: 20px;
+}
